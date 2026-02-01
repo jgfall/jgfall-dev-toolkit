@@ -1,0 +1,50 @@
+{
+  "name": "jgfall-dev-toolkit",
+  "version": "1.0.0",
+  "description": "Comprehensive development toolkit with reusable components, styling frameworks, deployment scripts, and automation tools",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "create:react": "node scripts/setup/create-react-app.js",
+    "create:static": "node scripts/setup/create-static-site.js",
+    "setup:hooks": "bash scripts/setup/setup-git-hooks.sh",
+    "deploy:netlify": "bash scripts/deployment/deploy-netlify.sh",
+    "deploy:vercel": "bash scripts/deployment/deploy-vercel.sh",
+    "deploy:gh-pages": "bash scripts/deployment/deploy-gh-pages.sh",
+    "optimize:images": "bash scripts/build/optimize-images.sh"
+  },
+  "keywords": [
+    "toolkit",
+    "components",
+    "utilities",
+    "automation",
+    "deployment",
+    "react",
+    "css",
+    "javascript",
+    "development"
+  ],
+  "author": "Jackson Fall <jackson@jgfall.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgfall/jgfall-dev-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jgfall/jgfall-dev-toolkit/issues"
+  },
+  "homepage": "https://github.com/jgfall/jgfall-dev-toolkit#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  }
+}
